@@ -1,0 +1,6 @@
+ipykernel
+numpy
+gymnasium[box2d]
+swig
+torch
+matplotlib>=3.5.0
