@@ -75,7 +75,7 @@ python main.py test --enable-wind --wind-power 15.0 --turbulence-power 1.5
 ```
 
 Testing parameters that can be customized:
-- `--model-path`: Path to the trained model file (default: "PPO_continuous_LunarLander-v3.pth")
+- `--model-path`: Path to the trained model file (default: "trained_model.pth", a model trained on an environment with no wind nor turbulences)
 - `--n-simulations`: Number of test simulations to run (default: 100)
 
 Example with custom parameters:
@@ -97,17 +97,12 @@ During testing:
 - `history_avg_reward.txt`: Training history with average rewards and episode lengths
 - `test_results.png`: Visualization of test results with reward and episode length distributions
 
-## Environment Details
-
-The LunarLander-v3 environment includes:
-- Continuous action space for precise control
-- Wind effects enabled for added challenge (wind_power=15.0, turbulence_power=1.5)
-- Realistic physics simulation
-- Reward structure based on landing position, velocity, and fuel usage
-
 ## Notes
 
 - GPU acceleration is automatically used if available (CUDA)
 - The training includes action standard deviation decay to balance exploration and exploitation
 - Testing runs multiple episodes to ensure reliable performance metrics
 - The final test simulation is always rendered for visual inspection
+
+## About the use of AI
+AI tools were used to make the plots, help refacto the code, add comments and docstrings, create the CLI interface and write the README. The model used was Claude-3.5-sonnet in the IDE Cursor.
