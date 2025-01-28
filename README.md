@@ -17,7 +17,14 @@ Install the required packages:
 pip install -r requirements.txt
 ```
 
-## Usage
+## Quick usage
+
+The quickest way to try out the project is to run the Jupyter notebook `solution_notebook.ipynb`, which contains:
+- The complete model implementation (PPO and Actor-Critic architecture)
+- The training logic
+- A quick training example on 500 episodes (takes ~2 minutes)
+
+## Complete Usage
 
 The project can be run in two modes: training and testing. Both modes support wind effect parameters.
 
