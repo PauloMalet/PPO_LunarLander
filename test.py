@@ -8,7 +8,7 @@ from models import Memory, PPO
 class Test:
     def __init__(
         self,
-        model_path="PPO_continuous_LunarLander-v3.pth",
+        model_path="trained_model.pth",
         env_name="LunarLander-v3",
         max_timesteps=350,
         action_std=0.01,

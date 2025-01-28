@@ -20,8 +20,8 @@ class Train:
         lr=0.0003,
         betas=(0.9, 0.999),
         random_seed=None,
-        decay_threshold=0,
-        decay_speed=0.999,
+        decay_threshold=100,
+        decay_speed=0.93,
         env_kwargs=None,
     ):
         self.env_name = env_name

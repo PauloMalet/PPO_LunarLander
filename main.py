@@ -58,8 +58,8 @@ def main():
     testing_group.add_argument(
         "--model-path",
         type=str,
-        default="PPO_continuous_LunarLander-v3.pth",
-        help="Path to the model file for testing (default: PPO_continuous_LunarLander-v3.pth)",
+        default="trained_model.pth",
+        help="Path to the model file for testing (default: trained_model.pth)",
     )
     testing_group.add_argument(
         "--n-simulations", type=int, default=100, help="Number of test simulations to run (default: 100)"
