@@ -84,7 +84,7 @@ class Test:
         ppo = PPO(
             state_dim, action_dim, self.action_std, self.lr, self.betas, self.gamma, self.K_epochs, self.eps_clip
         )
-        state_dict = torch.load(self.model_path, weights_only=True)
+        state_dict = torch.load(self.model_path, weights_only=True, map_location=torch.device("cpu"))
         ppo.policy_old.load_state_dict(state_dict)
         ppo.policy_old.eval()
 
